@@ -1,1 +1,3 @@
-web: gunicorn HotelManagement.wsgi --log-file -
+web: gunicorn HotelManagement.wsgi:application --log-file - --log-level debug
+python manage.py collectstatic --noinput
+manage.py migrate
