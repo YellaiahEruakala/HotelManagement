@@ -1,0 +1,333 @@
+ *{
+    padding:0;
+    margin:0;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body{
+    background-color:#f6f6f6;
+}
+
+header{
+    width:100%;
+    height:3rem;
+    background-color:blue;
+}
+
+.text-header{
+    padding-top:1rem;
+    margin-left:10rem;
+    color:white;
+}
+
+.nav-bar{
+    height:6rem;
+    width:100%;
+}
+
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: -2rem;
+	margin-right:5rem;
+	word-spacing: 20px;
+
+}
+
+ul li{
+	display: inline-block;
+
+}
+
+ul li a{
+	color: #000;
+	padding: 5px 25px;
+	text-decoration: none;
+	border: 1px solid trasparent;
+	transition: 0.6s;
+	font-size:1.1rem;
+}
+
+ul li a:hover{
+	color: #ffffff;
+	background-color: #ff0000;
+}
+
+.nav-logo{
+    font-size:2.5rem;
+    font-weight:bold;
+    margin-left:10rem;
+    padding-top:1.5rem;
+}
+
+.logo-img{
+    background-image:url("../img/img.b17cfe4a35cf.png");
+    width:100%;
+    height:65rem;
+    margin-top:1.2rem;
+}
+
+
+.small-head1{
+    display:flex;
+    margin-left:10rem;
+    color:#ff0000;
+    padding-top:5rem;
+    font-size:1.5rem;
+}
+
+.big-head1{
+    color:#000;
+    padding-top:2.5rem;
+    margin-left:10rem;
+    font-size:3rem;
+    font-weight:bold;
+}
+
+.card1-column{
+    width:40%;
+    float:left;
+    padding:0px 3px;
+}
+
+.card1-row::after{
+    content:"";
+    diaplay:table;
+    clear:both;
+}
+
+
+.card1{
+    background-color:#b7f7b7;
+    width:32rem;
+    height:33rem;
+    overflow:hidden;
+    margin-left:13rem;
+    margin-top:5rem;
+    text-align:center;
+}
+
+.card1 img:hover{
+    transition:0.6s;
+    cursor:pointer;
+    transform:scale(1.1);
+}
+
+.small-head2, .big-head2{
+
+    margin-left:10rem;
+
+
+}
+
+
+.small-head2{
+    color:#ff0000;
+    padding-top:5rem;
+    font-size:1.5rem;
+    display:flex;
+    width:80%;
+}
+
+.big-head2{
+    color:#000;
+    padding-top:3rem;
+    font-size:3rem;
+    font-weight:bold;
+}
+
+
+.card2-column{
+    width:25%;
+    float:left;
+    padding:0px 15px;
+}
+
+.card2-row::after{
+    content:"";
+    diaplay:table;
+    clear:both;
+}
+
+
+
+.card2{
+    background-color:#f0c0f1;
+    width:23rem;
+    height:28rem;
+    margin-left:10rem;
+    margin-top:5rem;
+    text-align:center;
+    overflow:hidden;
+}
+
+.card2 img:hover{
+    transition:0.6s;
+    cursor:pointer;
+    transform:scale(1.1);
+}
+.coffee-name{
+    font-size:2.2rem;
+    margin-top:1rem;
+}
+
+.coffee-price{
+    font-size:1.5rem;
+    margin-top:1rem;
+}
+
+.coffee-tag{
+    margin-top:1rem;
+    font-size:1rem;
+}
+
+.coffee-btn{
+    background-color:#eb560d;
+    font-size:2.5rem;
+    color:white;
+    width:50%;
+    margin-top:1.3rem;
+
+
+}
+
+.coffee-btn a{
+    color: #fff;
+    text-decoration:none;
+}
+
+.coffee-btn:hover, .coffee-btn a:hover{
+    background-color:green;
+    cursor:pointer;
+    width:52%;
+    transition:0.6s;
+}
+.m-btn{
+    background-color:#eb566c;
+    font-size:2rem;
+    color:white;
+    width:50%;
+    border:none;
+    border-radius:1rem;
+    margin-top:1.3rem;
+    margin-left:6rem;
+
+
+}
+
+.m-btn a{
+    color: #fff;
+    text-decoration:none;
+}
+
+.m-btn:hover, .m-btn a:hover{
+    background-color:green;
+    cursor:pointer;
+    font-size:2.2rem;
+    width:51%;
+    transition:0.6s;
+
+}
+
+.text-joy1{
+    font-size:2.5rem;
+    padding-top:4rem;
+    margin-left:10rem;
+    color:#ffffaa;
+}
+
+.text-joy2{
+    font-size: 5rem;
+    padding-top:5rem;
+    margin-left:10rem;
+    color:#fff;
+}
+
+span{
+    color:red;
+    font-size:6.5rem;
+    font-weight:bold;
+
+}
+
+.text-desc{
+    color:white;
+    line-height:2.2rem;
+    font-size:1.7rem;
+    margin-left:30rem;
+    padding-top:4rem;
+
+}
+
+.explore-btn{
+    background-color:red;
+    font-size:3rem;
+    color:white;
+    width:20%;
+    border:ridge;
+    border-radius: 2rem;
+    text-align:center;
+    margin-top:10rem;
+    margin-left:60rem;
+
+}
+
+.explore-btn a{
+    color: #fff;
+    text-decoration:none;
+}
+
+.explore-btn:hover, .explore-btn a:hover{
+    transition: 0.6s;
+    font-size:3.2rem;
+    background-color:green;
+    width:23%;
+}
+
+
+.foot-column{
+    width:33.3%;
+    float:left;
+    padding:0px 0px;
+}
+
+.foot-row::after{
+    content:"";
+    diaplay:table;
+    clear:both;
+}
+
+
+.foot-card{
+    background-color:#212529;
+    width:auto;
+    height:28rem;
+    margin-top:6rem;
+    padding-top:7rem;
+    font-size:1rem;
+    text-align:center;
+    line-height:3.5rem;
+    color:white;
+}
+
+.foot-card a{
+    color:white;
+    text-decoration:none;
+
+}
+
+.foot-card a:hover{
+    transition:0.6s;
+    color:#eb566c;
+    font-size:1.1rem;
+}
+.foot-head{
+    font-size:1.4rem;
+    text-decoration:underline;
+    font-weight:bold;
+}
+
+
+
