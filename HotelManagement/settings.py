@@ -23,8 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '&14a!_x1ta9vd34fg8eh)!ig^mat=o-2)_t2(g*7!!zv2mv8x#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = False
-DEBUG = os.environ.get('DEBUG', False)
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'capicocoffeeshop.herokuapp.com']
 
@@ -132,3 +131,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles'),
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
