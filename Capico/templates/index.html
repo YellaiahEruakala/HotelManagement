@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+{% load static %}
+{% static "img" as baseUrl %}
+
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/ac634086fd.js" crossorigin="anonymous"></script>
+    <link href="{% static 'css/index_style.css' %}" rel="stylesheet">
+    <title>Capico</title>
+</head>
+<body>
+    <header>
+        <p class="text-header"> Mon - Sat : 6.00 AM To 10.00 PM || Sun : CLOSED</p>
+    </header>
+
+
+    <div class="nav-bar">
+        <div class="nav-logo">
+            Capico
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="/">Home</a>
+                <li><a href="about">About</a>
+                <li><a href="contact">Contact</a>
+                <li><a href="https://en.wikipedia.org/wiki/Help">Help</a>
+            </ul>
+        </div>
+        <div class="logo-img">
+            <p class="text-joy1">
+                - enjoy -
+            </p>
+            <p class="text-joy2">
+                the <span>taste</span> of joy
+            </p>
+            <p class="text-desc">
+                Introducing the rich cocoa grains
+                coffee to enjoy the taste of JOY. </br>
+                The coffee richness will make
+                you feel like hell in heaven.</br>
+                The aroma of rich ingredients will kick you with the taste untill you feel like HEAVEN.
+            </p>
+            <p class="explore-btn">
+                <a href="#">Explore</a>
+            </p>
+        </div>
+
+            <p class="small-head1">
+                - OUR TOP COFFEES -
+            </p>
+            <p class="big-head1">
+                Our Special Coffees
+            </p>
+
+        <div class="container">
+            <div class="card1-row">
+                {% for i in coffee %}
+                <div class="card1-column">
+                    <div class="card1">
+                        <img src="{{baseUrl}}/{{i.cimg}}" style="height:19rem; width:100%;">
+
+                        <p class="coffee-name">{{i.cname}}</p>
+                        <p class="coffee-price">$ {{i.cprice}}</p>
+                        <p class="coffee-tag">{{i.ctag}}</p>
+                        <p class="coffee-btn"><a href="#">Order Now</a></p>
+                    </div>
+                </div>
+                {% endfor %}
+
+                <!--<div class="card1-column">
+                    <div class="card1">
+                        <img src="{% static 'img/ViennaMocha.png' %}" style="height:19rem; width:100%;">
+                        <p class="coffee-name">ViennaMocha</p>
+                        <p class="coffee-price">$ 750</p>
+                        <p class="coffee-tag">Enjoy the fragrance.</p>
+                        <p class="coffee-btn"><a href="#">Order Now</a></p>
+                    </div>
+                </div>
+
+                <div class="card1-column">
+                    <div class="card1">
+                        <img src="{% static 'img/Mocha.png' %}" style="height:19rem; width:100%;">
+                        <p class="coffee-name">Mocha</p>
+                        <p class="coffee-price">$ 750</p>
+                        <p class="coffee-tag">Enjoy the fragrance.</p>
+                        <p class="coffee-btn"><a href="#">Order Now</a></p>
+                    </div>
+                </div>
+
+                <div class="card1-column">
+                    <div class="card1">
+                        <img src="{% static 'img/Borgia.png' %}" style="height:19rem; width:100%;">
+                        <p class="coffee-name">Borgia</p>
+                        <p class="coffee-price">$ 750</p>
+                        <p class="coffee-tag">Enjoy the fragrance.</p>
+                        <p class="coffee-btn"><a href="#">Order Now</a></p>
+                    </div>
+                </div>
+
+                <div class="card1-column">
+                    <div class="card1">
+                        <img src="{% static 'img/Mazagran.png' %}" style="height:19rem; width:100%;">
+                        <p class="coffee-name">Mazagran</p>
+                        <p class="coffee-price">$ 750</p>
+                        <p class="coffee-tag">Enjoy the fragrance.</p>
+                        <p class="coffee-btn"><a href="#">Order Now</a></p>
+                    </div>
+                </div>
+
+                <div class="card1-column">
+                    <div class="card1">
+                        <img src="{% static 'img/PiccolloLatte.png' %}" style="height:19rem; width:100%;">
+                        <p class="coffee-name">Piccolo latte</p>
+                        <p class="coffee-price">$ 750</p>
+                        <p class="coffee-tag">Enjoy the fragrance.</p>
+                        <p class="coffee-btn"><a href="#">Order Now</a></p>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+
+            <p class="small-head2">
+                - OUR EXPERT TEAM -
+            </p>
+            <p class="big-head2">
+                Our Expert Team Members
+            </p>
+
+    <div class="card2-row">
+                <div class="card2-column">
+                    <div class="card2">
+                        <img src="{% static 'img/AndrewCaroll.png' %}" style="height:17rem; width:100%;">
+                        <p class="coffee-name">Andrew Caroll</p>
+                        <p class="coffee-tag">CEO</p>
+                        <p class="m-btn"><a href="#">Profile</a></p>
+                    </div>
+                </div>
+
+                <div class="card2-column">
+                    <div class="card2">
+                        <img src="{% static 'img/JohnMathew.png' %}" style="height:17rem; width:100%;">
+                         <p class="coffee-name">John Mathew</p>
+                        <p class="coffee-tag">Co-founder</p>
+                        <p class="m-btn"><a href="#">Profile</a></p>
+                    </div>
+                </div>
+
+                <div class="card2-column">
+                    <div class="card2">
+                        <img src="{% static 'img/DevaSherin.png' %}" style="height:17rem; width:100%;">
+                         <p class="coffee-name">Deva Sherin</p>
+                        <p class="coffee-tag">Co-founder</p>
+                        <p class="m-btn"><a href="#">Profile</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="foot-container">
+            <div class="foot-row">
+                    <div class="foot-column">
+                        <div class="foot-card">
+                            <h1>Capico</h1>
+                            <p class="contact-link"><a href="https://mobile.twitter.com/login">
+                                <i class="fab fa-twitter-square"></i> Capico 2021</a></br>
+                            <a href="https://www.facebook.com/">
+                                <i class="fab fa-facebook-square"></i> Capico 2021</a></br>
+                            <a href="https://mail.google.com/mail">
+                                <i class="fab fa-google-plus-square"></i> Capico2021@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="foot-column">
+                        <div class="foot-card">
+                            <p class="foot-head">Quick Links</p>
+                            <A href="https://en.wikipedia.org/wiki/Advance">Advanced</A></br>
+                            <A href="https://en.wikipedia.org/wiki/Management">Management</A></br>
+                            <A href="contact">Contact</A></br>
+                            <A href="about">About</A></br>
+                            <A href="https://en.wikipedia.org/wiki/Information">Information</A></br>
+
+
+                        </div>
+                    </div>
+
+                    <div class="foot-column">
+                        <div class="foot-card">
+                            <p class="foot-head">Additional Links</p>
+                            <A href="https://en.wikipedia.org/wiki/Privacy_and_policy">Privacy Policy</A></br>
+                            <A href="https://en.wikipedia.org/wiki/Contractual_term">Terms & Conditions</A></br>
+                            <A href="https://en.wikipedia.org/wiki/Property">Properties</A></br>
+                            <A href="https://en.wikipedia.org/wiki/License">Licenses</A></br>
+
+
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+
+</body>
+</html>
