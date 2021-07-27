@@ -125,12 +125,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-django_heroku.settings(locals())
-
-if os.environ.get('DEBUG') == 'TRUE':
-    DEBUG = True
-elif os.environ.get('DEBUG') == 'FALSE':
-    DEBUG = False
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
